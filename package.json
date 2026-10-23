@@ -1,0 +1,23 @@
+{
+  "name": "inside-role-tests",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "auth": "tsx scripts/generate-auth-roles.ts",
+    "codegen": "tsx scripts/codegen.ts",
+    "test": "playwright test",
+    "test:general": "playwright test --project=general",
+    "test:admin-kc": "playwright test --project=admin-safety-kc",
+    "test:admin-region": "playwright test --project=admin-safety-region",
+    "test:admin-ho": "playwright test --project=admin-safety-head-office",
+    "test:auditor": "playwright test --project=auditor",
+    "test:super-admin": "playwright test --project=super-admin"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.61.1",
+    "@types/node": "^22.0.0",
+    "dotenv": "^17.4.2",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0"
+  }
+}
